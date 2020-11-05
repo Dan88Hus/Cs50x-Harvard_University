@@ -1,0 +1,4 @@
+letter is any lowercase character from a to z or any uppercase character from A to Z,
+any sequence of characters separated by spaces should count as a word,
+any occurrence of a period, exclamation point, or question mark indicates the end of a sentence.
+Letters can be any uppercase or lowercase alphabetic characters, but shouldn’t include any punctuation, digits, or other symbols.
