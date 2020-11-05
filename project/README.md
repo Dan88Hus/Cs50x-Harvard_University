@@ -1,13 +1,12 @@
-#################################################################################################################################
-#   Assumptions:                                                                                                                #
-#   There is an warehouse which can ship items to another location so we each user will save records in database and we will    #
-#   SELECT from that records to dynamical website                                                                               #
-#    1 company worker who logged can see all item list in warehouse                                                             #
-#    item record page will return record page again to enter new item                                                           #
-#    Company purchase item from supplier and send it to customers, sales dont return purchased item, no return back             #
-#    SELECTION from item table will be >= it_qnty so we can transfer what we have on warehouse item list                        #
-#    no delete or hide recorded data                                                                                            #
-#################################################################################################################################
+
+Assumptions:                                                                                                               
+There is an warehouse which can ship items to another location so we each user will save records in database and we will   
+SELECT from that records to dynamical website                                                                              
+1 company worker who logged can see all item list in warehouse                                                             
+item record page will return record page again to enter new item                                                           
+Company purchase item from supplier and send it to customers, sales dont return purchased item, no return back             
+SELECTION from item table will be >= it_qnty so we can transfer what we have on warehouse item list                        
+no delete or hide recorded data                                                                                            
 
 #Created 4 table in warehouse.db which are "location, users, item, transfer"
 
