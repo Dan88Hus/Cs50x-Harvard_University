@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Item List
+{% endblock %}
+
+{% block main %}
+    <table class="table table-striped">
+        <thead>
+            <h1>Item List:</h1>
+            <tr>
+                <th>Name</th>
+                <th>Quantity</th>
+                <th>Purchase Price</th>
+                 <th>Purchased Date</th>
+                <th>Sales Price</th>
+            </tr>
+        </thead>
+            {% for item in item_list %}
+            <tr>
+                <td>{{ item.it_name }}   </td>
+                <td>{{ item.it_qnty }}  </td>
+                <td>{{ item.it_pur_price }} </td>
+                <td>{{ item.it_pur_date }} </td>
+                <td>{{ item.it_sal_price }}  </td>
+
+            </tr>
+            {% endfor %}
+    </table>
+{% endblock %}

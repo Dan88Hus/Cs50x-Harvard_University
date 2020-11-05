@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Warehouse List
+{% endblock %}
+
+{% block main %}
+    <table class="table table-striped">
+        <thead>
+            <h1>Warehouse List:</h1>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>E-Mail</th>
+            </tr>
+        </thead>
+            {% for i in warehouse_list %}
+            <tr>
+                <td>{{ i.lo_name }}   </td>
+                <td>{{ i.lo_address }}  </td>
+                <td>{{ i.lo_email }} </td>
+            </tr>
+            {% endfor %}
+    </table>
+{% endblock %}

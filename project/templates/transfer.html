@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block main %}
+    <form action="/transfer" METHOD="GET", "POST" >
+         <div class="form-group">
+            <input class="form-control" name="tr_time" placeholder="Date of Transfer" type="date" required formmethod="post">
+        </div>
+       <select autofocus class="form-control" name="it_name" type="text" formmethod="get" action="/transfer">
+                <option disabled="" selected="" value="">Item to Transfer:</option>
+                {% for item in items %}
+                    <option value="{{ item.it_name }}">Item: {{ item.it_name }} => Quantity on hand: {{ item.it_qnty }}</option>
+                {% endfor %}
+            </select>
+
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="tr_qnty" placeholder="Quantity" type="number" min= "1" step=".01" required formmethod="post">
+        </div>
+        <select autofocus class="form-control" name="lo_name" type="text" formmethod="get" action="/transfer">
+                <option disabled="" selected="" value="">Select Location to send:</option>
+                {% for lo in names %}
+                    <option value="{{ lo.lo_name }}">{{ lo.lo_name }}</option>
+                {% endfor %}
+            </select>
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="tr_shipping_cost" placeholder="Shipping Cost" type="number" min= "0" step=".01" required formmethod="post">
+        </div>
+
+
+
+        <button class="btn btn-primary" type="submit" formmethod="post">Make Transfer</button>
+    </form>
+{% endblock %}
+

@@ -1,0 +1,4 @@
+prompt user to enter a number between 1 and 8
+    use while loop for that
+prints a left-aligned pyramid of that height.
+    use 2 nested for loops for that

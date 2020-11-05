@@ -1,0 +1,11 @@
+a program that first asks the user how much change is owed
+and then prints the minimum number of coins with which that change can be made.
+
+ask "How much change is owed"
+prints "Minimum number of coins can be:" should be integer \n
+make sure input is not negative number, if its negative prompt again
+convert the user’s inputted dollars to cents int cents = round(dollars * 100);
+round your cents to the nearest penny
+start with the highest coin
+
+

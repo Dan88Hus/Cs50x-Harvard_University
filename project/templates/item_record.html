@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Item Record
+{% endblock %}
+
+{% block main %}
+    <form action="/item_record" method="post">
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="it_name" placeholder="Item Name" type="text" required>
+        </div>
+        <div class="form-group">
+            <input class="form-control" name="it_pur_price" placeholder="Purchase Price" type="number" required>
+        </div>
+        <div class="form-group">
+            <input class="form-control" name="it_pur_date" placeholder="Purchased Date" type="date" required>
+        </div>
+        <div class="form-group">
+            <input class="form-control" name="it_sal_price" placeholder="Sales Price" type="number" required >
+        </div>
+        <div class="form-group">
+            <input class="form-control" name="it_qnty" placeholder="Quantity" type="number" required >
+        </div>
+
+        <button class="btn btn-primary" type="submit">Item Record</button>
+    </form>
+{% endblock %}

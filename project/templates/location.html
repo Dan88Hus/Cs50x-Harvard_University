@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Warehouse Record
+{% endblock %}
+
+{% block main %}
+    <form action="/location_record" method="post">
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="lo_name" placeholder="Warehouse Name" type="text" required>
+        </div>
+        <div class="form-group">
+            <input class="form-control" autocomplete="off" name="lo_address" placeholder="Warehouse Address" type="text" required>
+        </div>
+        <div class="form-group">
+            <input class="form-control" autocomplete="off" name="lo_email" placeholder="Warehouse E-mail" type="text" required >
+        </div>
+
+        <button class="btn btn-primary" type="submit">Warehouse Record</button>
+    </form>
+{% endblock %}

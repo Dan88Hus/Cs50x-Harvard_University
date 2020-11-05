@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Transfer List
+{% endblock %}
+
+{% block main %}
+    <table class="table table-striped">
+        <thead>
+            <h1>Transfer List:</h1>
+            <tr>
+                <th>Location Transferred</th>
+                <th>Transferred Time</th>
+                <th>Transferred Item</th>
+                <th>Transferred Quantity</th>
+                <th>Transferred Shipping Cost</th>
+            </tr>
+        </thead>
+            {% for i in tr_list %}
+            <tr>
+                <td>{{ i.tr_lo }}   </td>
+                <td>{{ i.tr_time }}  </td>
+                <td>{{ i.tr_item }}  </td>
+                <td>{{ i.tr_qnty }} </td>
+                 <td>{{ i.tr_shipping_cost }} </td>
+
+            </tr>
+            {% endfor %}
+    </table>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quoted
+{% endblock %}
+
+{% block main %}
+    Company     : {{ user_lookup["name"] }}
+    Symbol      : {{ user_lookup["symbol"] }}
+    Price       : {{ user_lookup["price"] }}
+
+{% endblock %}

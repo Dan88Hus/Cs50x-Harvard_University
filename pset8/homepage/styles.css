@@ -1,0 +1,78 @@
+h1
+{
+    text-align: right;
+    color: white;
+    font-size: 30px;
+    font-weight: lighter;
+    padding: 0cm;
+}
+.header
+{
+    text-align: right;
+    font-size: large;
+    font-weight: bold;
+    color: black;
+    background-color: black;
+    padding: 1rem;
+    
+}
+.d_h_one
+{
+    text-align: left;
+    font-size: large;
+    font-weight: lighter;
+    margin: 1mm;
+    color: white;
+}
+#first_p1
+{
+    font-size: 25px;
+    background-color: lightgray;
+    text-align: left;
+    margin-left: 10mm;
+    font-weight: lighter;
+
+}
+#college
+{
+    font-style: italic;
+    font-weight: lighter;
+    font-weight: bold;
+    color: black;
+    margin: 0mm;
+}
+#hi_click
+{
+    font-family: fantasy;
+    font-size: 1.5ch;
+    font-weight: normal;
+    padding: 0.5cm;
+    padding-bottom: 1cm;
+}
+#liid
+{
+    color: white;
+    font-family: sans-serif
+    font-size: 1.5ch;
+    font-weight: normal;
+    padding: 0.2cm;
+    padding-bottom: 5cm;
+}
+#collegesecond
+{
+    font-style: italic;
+    font-weight: lighter;
+    font-weight: bold;
+    color: white;
+    margin: 0mm;
+    
+}
+#hello
+{
+    font-style: italic;
+    font-weight: lighter;
+    font-weight: bold;
+    color: black;
+    margin: 0mm;
+    font-size: 2rem;
+}

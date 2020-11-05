@@ -1,0 +1,17 @@
+.comp_name
+{
+    font: 400 50px/0.8 'Cookie', Helvetica, sans-serif;
+    color: #black;
+    text-shadow: 4px 4px 3px rgba(0,0,0,0.1);
+}
+
+h1
+{
+    font: 400 28px/0.8 'Cookie', Helvetica, sans-serif;
+    color: #black;
+    text-shadow: 4px 4px 3px rgba(0,0,0,0.1);
+}
+tr
+{
+    align-content: center;
+}
